@@ -62,7 +62,7 @@ const string = `
     top: 170px;
     margin-left: -64px;
 }
-.upperLip{
+.upper-lip{
     position: relative;
     top: -10px;
     z-index: 1;
@@ -87,7 +87,7 @@ const string = `
      transform: rotate(18deg) translateX(32px);
      border-left-color: transparent;
 }
-.lowerLip{
+.lower-lip{
     height: 110px;
     width: 100%;
     position: absolute;
