@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"
+    />
+    <title>皮卡丘展示</title>
+  </head>
+  <body>
+    <div id="demo1"></div>
+    <style id="demo2"></style>
+    <div id="buttons">
+        <button id="btnPlay">播放</button>
+        <button id="btnPause">暂停</button>
+        <button id="btnSlow">慢速</button>
+        <button id="btnStandard">标准</button>
+        <button id="btnFast">快速</button>
+    </div>
+    <style>
+        *{box-sizing: border-box;}
+        *::before,*::after{box-sizing: border-box;}
+
+        #buttons{
+            position: fixed;
+            top:0;
+            right:0;
+            z-index:10;
+            display:flex;
+            flex-direction: column;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+        #buttons>button{
+            margin-bottom: 10px;
+        }
+
+        #demo1{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 45vh;
+            overflow-y: auto;
+        }
+        #demo1::-webkit-scrollbar{
+            display:none;
+        }
+        #demo2{
+            display: none;
+        }
+
+        #html {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 55vh;
+      }
+    </style>
+    <div id="html">
+        <div class="skin">
+            <div class="blackNose">
+              <div class="nose up">
+                <div class="nose down"></div>
+              </div>
+            </div>
+      
+            <div class="flashEye">
+              <div class="eye left"></div>
+              <div class="eye right"></div>
+            </div>
+      
+            <div class="mouth">
+              <div class="upperLip">
+                <div class="lip left"></div>
+                <div class="lip right"></div>
+              </div>
+              <div class="lowerLip">
+                <div class="tongue up">
+                  <div class="tongue down"></div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="redFace">
+              <div class="face left"></div>
+              <div class="face right"></div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="./pikachu.js"></script>
+  </body>
+</html>
